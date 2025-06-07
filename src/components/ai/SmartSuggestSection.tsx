@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import { useFormState, useFormStatus } from 'react-dom';
+import { useFormStatus } from 'react-dom';
+import { useActionState } from 'react'; // Updated import
 import { handleSmartSuggest } from '@/lib/actions';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -37,7 +38,7 @@ function SubmitButton() {
 }
 
 export function SmartSuggestSection() {
-  const [state, formAction] = useFormState(handleSmartSuggest, initialState);
+  const [state, formAction] = useActionState(handleSmartSuggest, initialState); // Updated usage
 
   return (
     <Card className="shadow-lg">
