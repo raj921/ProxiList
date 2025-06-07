@@ -70,3 +70,7 @@ Follow these instructions to get a local copy up and running.
     npm run genkit:watch
     # or for a single run without watching
     # npm run genkit:dev
+
+## website
+https://studio.firebase.google.com/studio-6772987653 
+
